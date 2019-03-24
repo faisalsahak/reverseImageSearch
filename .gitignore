@@ -8,8 +8,8 @@
 /build
 /captures
 .externalNativeBuild
-app
-/app
+app/src
+/app/src
 Flask\ Server
 /Flask\ Server
 
