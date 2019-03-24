@@ -14,8 +14,7 @@ app/src/main/java/com/example/reverseimagesearch/postrequest/ListView.java
 app/src/main/java/com/example/reverseimagesearch/postrequest/CustomListAdapter.java
 /app/src/main/java/com/example/reverseimagesearch/postrequest/CustomListAdapter.java
 
-app/src/main/java/com/example/reverseimagesearch/postrequest/RequestQueueSingleton.java
-/app/src/main/java/com/example/reverseimagesearch/postrequest/RequestQueueSingleton.java
+
 
 
 Flask\ Server
