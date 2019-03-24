@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Bitmap bitmap;
 
-    Button tonysButton;
+    Button searchButton;
     Button cameraButton;
     RequestQueue requestQueue;
     ArrayList<String> imageLinks = new ArrayList<String>();
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     TextView best_guess;
     Uri imageUri;
 
-    Button urlButton;
+//    Button urlButton;
 
     boolean urlEntered = false;
 
@@ -79,11 +79,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.relative);
 
-        urlButton = (Button) findViewById(R.id.urlButton);
+//        urlButton = (Button) findViewById(R.id.urlButton);
 
 
 
-        tonysButton = (Button) findViewById(R.id.tonysButton);
+        searchButton = (Button) findViewById(R.id.searchButton);
         cameraButton = (Button) findViewById(R.id.cameraButton);
         urlInput = (EditText) findViewById(R.id.urlInput);
         best_guess = (TextView) findViewById(R.id.best_guess);
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Device does not have any camera!", Toast.LENGTH_LONG).show();
         }
 
-        tonysButton.setOnClickListener(new View.OnClickListener() {
+        searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.i(TAG, "onClick: Button Clicked");
@@ -104,16 +104,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
-    public void onClickUrl(View view){
-
-        urlButton.setVisibility(View.GONE);
-        urlInput.setVisibility(View.VISIBLE);
-        urlEntered = true;
-        urlButton.setEnabled(false);
-        Log.i(TAG, "onClickUrl: Clicked" );
-
-    }
+//
+//    public void onClickUrl(View view){
+//
+//        urlButton.setVisibility(View.GONE);
+//        urlInput.setVisibility(View.VISIBLE);
+//        urlEntered = true;
+//        urlButton.setEnabled(false);
+//        Log.i(TAG, "onClickUrl: Clicked" );
+//
+//    }
 
     //Checks if the user has a camera
     public boolean hasCamera(){
